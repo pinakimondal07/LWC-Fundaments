@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Expense Tracker" icon-name="custom:custom19">
+        <div class="chart slds-var-m-around_medium" lwc:dom="manual"></div>
+        <template lwc:if={error}>
+            <c-error-panel errors={error}></c-error-panel>
+        </template>
+    </lightning-card>
+</template>

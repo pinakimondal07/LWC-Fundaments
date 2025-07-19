@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>descriptionOne</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>descriptionOne</shortDescription>
+        <value>The Kaveri engine is an indigenously developed fighter jet engine program by India&apos;s Gas Turbine Research Establishment (GTRE) under the Defense Research and Development Organization (DRDO). Originally intended for the Light Combat Aircraft (LCA) Tejas, the Kaveri has faced delays and challenges. Recent focus has been on repurposing the engine for Unmanned Combat Aerial Vehicles (UCAVs) like the Ghatak.</value>
+    </labels>
+    <labels>
+        <fullName>descriptionTwo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>descriptionTwo</shortDescription>
+        <value>BrahMos-II or BrahMos-2 or BrahMos Mark II is a hypersonic scramjet-propelled missile currently under joint development by India&apos;s Defence Research and Development Organization and Russia&apos;s NPO Mashinostroyenia, which have together formed BrahMos Aerospace Private Limited. The BrahMos-II is expected to have a range of 1,500 kilometers (930 mi; 810 nmi) and a speed of Mach 8.</value>
+    </labels>
+</CustomLabels>

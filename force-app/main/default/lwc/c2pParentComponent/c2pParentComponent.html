@@ -1,0 +1,42 @@
+<template>
+
+    <!--Calling Parent using Simple Event-->
+    <!-- <lightning-card title="Child to Parent Communication">
+        <div class="slds-m-around_medium">
+            <lightning-button label="Show Modal" onclick={clickHandler}></lightning-button>
+            <template if:true={showModal}>
+                <c-c2p-modal-component onclose={okHandler}></c-c2p-modal-component>
+            </template>
+        </div>    
+    </lightning-card> -->
+    <!--.......................................................................................-->
+
+
+    <!-- Child to  Parent using Custom Event with data -->
+     <!-- <lightning-card title="Child to Parent Communication">
+        <div class="slds-m-around_medium">
+            <lightning-button label="Show Modal" onclick={clickHandler}></lightning-button>
+            <h1>{msg} 
+                Closed By : {closedby}
+            </h1>
+            <template if:true={showModal}>
+                <c-c2p-modal-component onclose={okHandler}></c-c2p-modal-component>
+            </template>
+        </div>    
+    </lightning-card> -->
+    <!--.......................................................................................-->
+
+
+    <!-- Section for Calling Parent using Event Bubling -->
+     <lightning-card title="Child to Parent Communication">
+        <div class="slds-m-around_medium" onclose={okHandler}>
+            <lightning-button label="Show Modal" onclick={clickHandler}></lightning-button>
+            <h1>{msg}</h1>
+            <template if:true={showModal}>
+                <c-c2p-modal-component></c-c2p-modal-component>
+            </template>
+        </div>    
+    </lightning-card>
+    <!--.......................................................................................-->
+
+</template>

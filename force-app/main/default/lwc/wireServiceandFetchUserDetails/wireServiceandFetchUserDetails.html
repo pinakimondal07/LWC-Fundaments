@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="@wire Servive and Fetch User Details using Function">
+        <div class="slds-m-around_medium">
+            <template if:true={userDetail}>
+                <div>Name : {userDetail.Name.value}</div>
+                <div>Email Id : {userDetail.Email.value}</div>
+            </template>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="@wire Servive and Fetch User Details using Property">
+        <div class="slds-m-around_medium">
+            <template if:true={userDetailProperty.data}>
+                <div>Name : {userDetailProperty.data.fields.Name.value}</div>
+                <div>Email Id : {userDetailProperty.data.fields.Email.value}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

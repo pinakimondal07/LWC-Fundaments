@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="getPickListValues Adapter with Industry Field">
+        <div class="slds-m-around_medium">
+            <lightning-combobox
+                name="Industry"
+                label="Industry"
+                value={selectedIndustry}
+                placeholder="Select Industry"
+                options={industryOptions}
+                onchange={handleIndustryChange}>
+            </lightning-combobox>
+            <p><strong>Selected Industry : </strong>{selectedIndustry}</p>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="getPickListValues Adapter with Type field">
+        <div class="slds-m-around_medium">
+            <lightning-combobox
+                name="Type"
+                label="Type"
+                value={selectedType}
+                placeholder="Select Type"
+                options={typeOptions}
+                onchange={handleTypeChange}>
+            </lightning-combobox>
+            <p><strong>Selected Type : </strong>{selectedType}</p>
+        </div>
+    </lightning-card>
+</template>

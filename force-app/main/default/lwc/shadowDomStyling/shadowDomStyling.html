@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="CSS accross Shadow DOM">
+        <div class="slds-m-around_medium">
+            <lightning-button label="Testing" title="Testing" class="btn"></lightning-button>
+        </div>
+    </lightning-card>
+</template>
+
+<!-- while inspecting you will find that on defining the css on btn class the changes are not reflecting 
+
+This is the component/dom exposed by Salesforce and the class btn is not able to reach the shadow dom and not applying
+the css to the shadow
+<lightning-button lwc-24musjg7o09="" class="btn" variant="neutral" lwc-40a585din3p-host=""><button lwc-40a585din3p="" class="slds-button slds-button_neutral" aria-disabled="false" title="Testing" type="button" part="button" kx-scope="button-neutral" kx-type="ripple" style="">Testing</button><style>c-shadow-dom-styling .slds-button{<br> background: red;<br> color: white;<br> }</style></lightning-button>
+
+This is the shadow dom for us
+<button lwc-40a585din3p="" class="slds-button slds-button_neutral" aria-disabled="false" title="Testing" type="button" part="button" kx-scope="button-neutral" kx-type="ripple" style="">Testing</button> 
+
+So to reach to this particular point, we need to write some JavaScript. -->

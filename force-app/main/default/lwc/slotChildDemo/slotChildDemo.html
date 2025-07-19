@@ -1,0 +1,22 @@
+<template>
+    <div>Waht is your name?</div>
+
+    <!--Unnamed slot - It will call all the passed HTML markups without name by the Parent component-->
+    <div><slot></slot></div>   
+    <div>What is your age?</div>
+
+    <!--Named slot - It will call only the passed HTML markups which has the same name in the Parent Component-->
+    <div><slot name="age"></slot></div>
+    
+    <!--This piece of code will still show the footer line in the second card eventhough the footer slot is commented out-->
+    <!-- <footer class="slds-card__footer">
+        <slot name="footer"></slot>
+    </footer> -->
+
+    <!--To meet our requirent we need to use this below piece of code-->
+    <footer class="slds-card__footer slds-hide">    <!--By default it will hide the footer-->
+        <slot name="footer" onslotchange={handleFooterChange}></slot>
+    </footer>
+
+
+</template>

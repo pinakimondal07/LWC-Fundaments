@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes, lightning:isUrlAddressable" access="global">
+    <aura:attribute name="id" type="String"/>
+
+    <!-- a method that should call on load of the page that can catch the ID that you are passing from LWC. -->
+    <aura:handler name="init" value="{!this}" action="{!c.onLoad}"/>
+    <!--c. represents we are calling the controller -->
+
+    <div class="slds-card">
+        <div>Hey I am comming from LWC and my Record Id is : {!v.id}</div>
+    </div>
+</aura:component>

@@ -1,0 +1,41 @@
+<template>
+
+
+    <!-- Section for one way data binding in a Template-->
+    <div>Premetive data type mapping : {fullname}</div> <!--This is an valid as fullname is an premetive data type-->
+    <!--<div>{employeename[1]}</div> This is an invalid -->
+    <div>Object data type mapping : {employeename.fullname}</div> <!--This is an valid as emloyeename is an object type-->
+
+    <!-- Section for Two way data binding in a Template-->
+    <!-- <input type="text" onchange={changeHanler}/>
+    <div>{fullname} is a cource of {title}</div> -->
+    <lightning-card  title="Two way Data Binding" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Enter Title : " onchange={changeHandler}></lightning-input>
+            <div>{fullname} is a cource of {title}</div>
+        </div>
+    </lightning-card>
+    <!-- .....................................................................................................-->
+
+    <!-- Section for @track properties-->
+    <lightning-card  title="@track properties" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Enter City Name : " onchange={trackHandler}></lightning-input>
+            <div>{address.city} is my City</div>
+        </div>
+    </lightning-card>
+    <!-- .....................................................................................................-->
+
+    
+    <!-- Section for getters in LWC-->
+    <lightning-card  title="Getters in LWC" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+            <!-- <div>{users[0]} {num1*num2}</div>   Not allowed as binding doesn't works for array and calculations -->
+            <div>First username is {firstUser}</div>
+            <div>Multiplication of {num1} and {num2} is {multiply}</div>
+        </div>
+    </lightning-card>
+    <!-- .....................................................................................................-->
+
+    
+</template>

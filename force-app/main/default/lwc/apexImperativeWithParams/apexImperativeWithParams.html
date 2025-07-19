@@ -1,0 +1,16 @@
+<template>
+   <lightning-card title="Apex Imperative Method with Parameter">
+      <div class="slds-m-around_medium">
+        <lightning-input type="search" onchange={searchHandler} label="Search Account" value={searchKey}></lightning-input>
+         <template if:true={accounts}>
+            <template for:each={accounts} for:item="acc">
+                <div class="slds-box slds-box_x-small slds-theme_shade" key={acc.Id}>
+                    <p><strong>Name : </strong>{acc.Name}</p>
+                    <p><strong>Type : </strong>{acc.Type}</p>
+                    <p><strong>Industry : </strong>{acc.Industry}</p>
+                </div>
+            </template>
+        </template>
+      </div>
+   </lightning-card>
+</template>

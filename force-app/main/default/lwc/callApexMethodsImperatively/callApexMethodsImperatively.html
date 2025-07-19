@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Call Apex Methods Imperatively">
+        <div class="slds-m-around_medium">
+            <lightning-button label="Call getAccountList() from Apex class" onclick={handleClick}></lightning-button>
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="acc">
+                    <div class="slds-box slds-box_x-small slds-theme_shade" key={acc.Id}>
+                        <p><strong>Name : </strong>{acc.Name}</p>
+                    </div>
+                </template>    
+            </template>
+        </div>
+    </lightning-card>
+</template>

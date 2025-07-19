@@ -1,0 +1,15 @@
+/* Our shared css library for stylingOne and stylingTwo component */
+
+.wrapper{ 
+    width: 100%; 
+    background-color: #ddd;
+
+}
+
+.skills{ 
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 16px; 
+    color: while;
+
+}

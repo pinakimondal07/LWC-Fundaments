@@ -1,0 +1,23 @@
+/* .wrapper{ 
+    width: 100%; 
+    background-color: #ddd;
+
+}
+
+.skills{ 
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 16px; 
+    color: while;
+
+} */
+ 
+
+/* Insted of writing the same css code again and again in stylingOne and stylingTwo component we can write the 
+common part in a shared css component(sharedCssStyling) and then import it here */
+@import 'c/sharedCssStyling';
+
+.html{
+    width: 90%;
+    background-color: #4caf50;
+}

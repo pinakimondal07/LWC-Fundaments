@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="updateRecord Function on Contact">
+        <div class="slds-m-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={contacts}
+                columns={columns}
+                draft-values={draftValues}
+                onsave={handleSave}
+                hide-checkbox-column>
+            </lightning-datatable>
+            <!--hide-checkbox-column will hide the save button by default and once something is update it will show up-->
+        </div>
+    </lightning-card>
+</template>

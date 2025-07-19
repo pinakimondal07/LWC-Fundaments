@@ -1,0 +1,23 @@
+/* 1. Parent CSS can't reach child component */
+h3{
+    font-size: 15px;
+    color: red;
+}
+
+/* 2. Parent can style the host element(child component) */
+/* c-css-child-demo{
+    display: block;
+    background-color: aqua;
+    color: black;
+} */
+
+/* 3. A child's css can style its own host elemet
+Check the cssChildDemo.css for the understanding 
+Remember the host style in child css will always over-ride the parent style on host elemet*/
+
+/* 4. Element passed into a slot can only be styled from Parent component only
+If we try to style the element from child css it will now show any effect */
+p{
+    font-size: 12px;
+    color: yellow;
+}

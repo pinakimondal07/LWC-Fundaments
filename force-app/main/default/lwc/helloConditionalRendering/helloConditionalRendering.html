@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Conditional Rendering" icon-name="custom:custom42">
+        <div class="slds-var-m-around_medium">
+            <lightning-button variant="brand" label="Show Data" title="Show Data" onclick={handleClick}
+            class="slds-var-m-left_x-small"></lightning-button>
+
+            <!-- if:true directive-->
+            <template if:true={isVisible}>
+                <div>Welcome to Zero to Hero Series</div>
+            </template>
+
+            <!-- if:false directive-->
+            <template if:false={isVisible}>
+                <div>You can't see the data. Please click the button</div>
+            </template>
+            
+
+            <!-- if:true and if:false directives on gatters-->
+            <lightning-input type="text" label="Type hello to see the data" onchange={changeHandler}></lightning-input>
+            <template if:true={hellomethod}>
+                <div>Hurray!! You have typed correctly</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

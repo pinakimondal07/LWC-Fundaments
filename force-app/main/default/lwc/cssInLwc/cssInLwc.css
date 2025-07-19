@@ -1,0 +1,24 @@
+/* Salesforce recommend you to apply the style using Element, Classes and Pseudo Class.
+Pseudo Class - A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+Style an element when a user moves the mouse over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+Style valid/invalid/required/optional form elements */
+
+p{
+    color: rebeccapurple;
+    font-size: 30px;
+    border: 1px solid red;
+}
+
+.course{
+    color: pink;
+    font-size: 20px;
+}
+
+.course:hover{
+    font-size: 50px;
+    color: red;
+}

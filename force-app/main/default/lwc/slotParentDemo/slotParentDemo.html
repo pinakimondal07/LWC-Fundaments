@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Slot Demo">
+        <!-- We have a requirement where we want our card to be rendered twice, however we want the footer to be there in the 
+             in the first one and not on the second one-->
+        <div class="slds-m-around_medium">
+            <c-slot-child-demo>
+                <p class="slds-text-color_success">My name is Salesforce Troops</p>
+                <p class="slds-text-color_error" slot="age">My age is 25</p>
+                <p slot="footer"> I am Footer</p>
+            </c-slot-child-demo>
+        </div>
+
+        <div class="slds-m-around_medium">
+            <c-slot-child-demo>
+                <p class="slds-text-color_success">My name is Salesforce Troops</p>
+                <p class="slds-text-color_error" slot="age">My age is 25</p>
+                <!-- <p slot="footer"> I am Footer</p>  -->
+            </c-slot-child-demo>
+        </div>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created by Lightning App Builder</description>
+    <flexiPage>Static_Resources_Context_and_Toast</flexiPage>
+    <label>Static Resources, Context and Toast</label>
+    <motif>Custom87: Safe</motif>
+</CustomTab>

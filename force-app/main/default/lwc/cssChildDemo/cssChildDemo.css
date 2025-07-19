@@ -1,0 +1,19 @@
+:host{
+    display: block;
+    background-color: burlywood;
+    color: black;
+}
+
+/* Suppose we have two child component we want to apply diffent style to both of them
+We can do so by applying a class to one of them */
+:host(.child2){
+    display: block;
+    background-color: lightpink;
+    color: whitesmoke;
+}
+
+/* Below code won't work as slot element can only be styled from parent component */
+p{
+    font-size: 20px;
+    color: red;
+}

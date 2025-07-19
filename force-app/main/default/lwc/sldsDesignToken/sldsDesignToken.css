@@ -1,0 +1,9 @@
+div{
+    /* color: blue;
+    background: white; */
+
+    /* Before hard coding the style here just if the token is available in Design Token or not */
+
+    color: var(--lwc-brandAccessible);
+    background: var(--lwc-colorBackgroundRowNew);
+}

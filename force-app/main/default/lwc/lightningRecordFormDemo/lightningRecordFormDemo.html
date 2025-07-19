@@ -1,0 +1,60 @@
+<template>
+    <lightning-card title="Create record using lightning-record-form">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+                object-api-name={objectName}
+                fields={fieldList}
+                onsuccess={handleSuccess}
+            ></lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Display record using lightning-record-form">
+        <!--By default its in the view mode-->
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+                record-id="001As00000ckyGMIAY"
+                object-api-name={objectName}
+                fields={fieldList}
+            ></lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Display record in read-only mode using lightning-record-form">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+                record-id="001As00000ckyGMIAY"
+                object-api-name={objectName}
+                fields={fieldList}
+                mode="readonly"
+            ></lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Edit record using lightning-record-form">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+                record-id="001As00000ckyGMIAY"
+                object-api-name={objectName}
+                fields={fieldList}
+                mode="edit"
+                columns="2"
+            ></lightning-record-form>
+        </div>
+    </lightning-card>
+
+    <!--This form won't be available in App-Page as recordId and objectApiName is available only on record page-->
+    <!--If we are using the layout-type we no need to mention the fields. 
+        It will automatically display the fields according to the layout-type -->
+    <lightning-card title="Edit record with layout using lightning-record-form">
+        <div class="slds-m-around_medium">
+            <lightning-record-form
+                record-id={recordId}
+                object-api-name={objectApiName}
+                mode="edit"
+                columns="2"
+                layout-type="Compact"
+            ></lightning-record-form>
+        </div>
+    </lightning-card>
+</template>

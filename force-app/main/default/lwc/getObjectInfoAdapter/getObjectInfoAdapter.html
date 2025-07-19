@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="getObjectInfo Adapter">
+        <div class="slds-m-around_medium">
+            <!--Property type is Asynchronous approach and hence before fetching the 'objectInfo' HTML starts rendering and the 
+            defaultRecordTypeID, apiName is not available yet. Hence it throws an error as undefined.-->
+            <!-- <div>defaultRecordTypeId : {objectInfo.data.defaultRecordTypeId}</div>
+            <div>Object API Name : {objectInfo.data.apiName}</div> -->
+
+            <!--To fix this we can wrap it in the if:true directive-->
+            <template if:true={objectInfo.data}>
+                <div>defaultRecordTypeId : {objectInfo.data.defaultRecordTypeId}</div>
+                <div>Object API Name : {objectInfo.data.apiName}</div>
+            </template>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="getObjectInfos Adapter">
+        <div class="slds-m-around_medium">
+            <!--The time this HTML loads, time objectInfos may not be avialble so it better to use if:true directive-->
+            <template if:true={objectInfos}>
+                <!--objectInfos is of type Object and objectInfos.results is of type array and inside results it has another object type, i.e. result
+                So, if something is in the array format, we can run the loop on the template.-->
+                <template for:each={objectInfos.results} for:item="obj">
+                    <div key={obj.result.apiName}>
+                        <div>Object API Name : {obj.result.apiName}</div>
+                        <div>defaultRecordTypeId : {obj.result.defaultRecordTypeId}</div>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

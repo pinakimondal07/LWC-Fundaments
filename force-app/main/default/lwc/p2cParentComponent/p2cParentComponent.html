@@ -1,0 +1,39 @@
+<template>
+    <!-- Variable names can be either all lower case or kebab-case -->
+    <!-- Any camel case character should be written as kebab-case -->
+    <!-- If you define an boolean(isvalid) attribute and you haven't assign any value by default, the value will be true-->
+
+    <!--Example of Simple Data-->
+    <c-p2c-alert-component
+        message="Hurray !! I got the data"
+        card-heading="Parent to Child Premitive data Communication" 
+        number={numb}
+        isvalid>
+    </c-p2c-alert-component>
+    
+
+    <!--Example of Complex Data-->
+    <div class="slds-m-bottom_medium"></div>
+    <c-p2c-carousel-component carousel-details={carouselData}></c-p2c-carousel-component>
+
+
+    <!--Example of data passing on action-->
+    <lightning-card title="Parent to Child communication on action">
+        <div class="slds-m-around_medium">
+            <lightning-input type="number" label="Enter percentage" onkeyup={percentChange} value={percentage}></lightning-input>
+            <c-p2c-progress-component progress-value={percentage}></c-p2c-progress-component>
+        </div>
+    </lightning-card>
+
+
+    <!--Example of Calling Child Method from Parent component-->
+    <lightning-card title="Calling child method from parent">
+        <div class="slds-m-around_medium">
+            <c-p2c-slider-component></c-p2c-slider-component>
+            <lightning-button variant="brand" label="Reset Slider" onclick={handleClick}></lightning-button>
+        </div>
+    </lightning-card>
+    
+    
+
+</template>
