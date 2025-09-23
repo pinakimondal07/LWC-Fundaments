@@ -1,5 +1,5 @@
 <apex:page lightningStylesheets="true">
-    <apex:slds />
+    <apex:slds/>
     <div class="slds-scope">
         <div class="slds-p-around_medium">
             <label>Enter the message to be published</label>
@@ -25,7 +25,7 @@
                     value:data
                 }
             }
-            sforce.one.publish(SAMPLEMC,message)
+            sforce.one.publish(SAMPLEMC, message)
         }
 
         function subscriberHandler(){
@@ -42,10 +42,10 @@
         }
 
         function msgHandler(message){
-            let receivedMessage = document.getElementbyId("receivedMessage")
+            let receivedMessage = document.getElementById("receivedMessage")
             receivedMessage.innerHTML = message && message.lmsData ? message.lmsData.value:"No Data Sent"
-        }
-        
+        }  
+
     </script>
 
 </apex:page>

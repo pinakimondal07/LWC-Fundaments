@@ -17,7 +17,7 @@ export default class LifecycleParent extends LightningElement {
         console.log("Parent renderedCallback called")
     }
 
-    //Section for Mounting Phase renderedCallback() exution to show that it gets called every there is change in DOM
+    //Section for Mounting Phase renderedCallback() exution to show that it gets called every time there is change in DOM
     // name
     // changeHandler(event){
     //     this.name = event.target.value

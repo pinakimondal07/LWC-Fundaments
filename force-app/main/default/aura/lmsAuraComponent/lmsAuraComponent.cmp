@@ -1,8 +1,9 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
     <aura:attribute name="messageValue" type="String"/>
-    <!-- The message value is a property that will store the value that we type in the input field -->
+    <!-- The messageValue is a property that will store the value that we type in the input field -->
 
     <aura:attribute name="messageReceived" type="String"/>
+    <!-- The messageReceived is a property that will store the value that we receive from the message channel -->
 
     <lightning:messageChannel
         type="SampleMessageChannel__c"
