@@ -28,6 +28,9 @@
                 fields={fieldList}
                 mode="readonly"
             ></lightning-record-form>
+            <!-- Use the fields property if you want to have to control the layout, otherwise use layout-type if you want to give
+             the layout control to System Administrator. The layout-type can be either 'Compact' or 'Full' 
+             fields is more preferable approach-->
         </div>
     </lightning-card>
 
@@ -45,7 +48,7 @@
 
     <!--This form won't be available in App-Page as recordId and objectApiName is available only on record page-->
     <!--If we are using the layout-type we no need to mention the fields. 
-        It will automatically display the fields according to the layout-type -->
+        It will automatically display the fields according to the layout-type(full or compact) -->
     <lightning-card title="Edit record with layout using lightning-record-form">
         <div class="slds-m-around_medium">
             <lightning-record-form

@@ -20,6 +20,7 @@ export default class LightningRecordEditForm extends LightningElement {
     handleReset() {
         const inputFields = this.template.querySelectorAll('lightning-input-field')
         if(inputFields){
+            //Convert the nodelist to array and then iterate
             Array.from(inputFields).forEach(field => {
                 field.reset()
             })

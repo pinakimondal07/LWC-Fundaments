@@ -15,7 +15,7 @@ export default class LightningRecordFormDemo extends LightningElement {
     fieldList = [NAME_FIELD, ANUAAL_REVENUE_FIELD, TYPE_FIELD, INDUSTRY_FIELD]
 
     handleSuccess(event) {
-        console.log(event.detail.id)
+        console.log(event.detail.id)    //When child component pass some data to parent, it come in the form of detail property of event
         const toastEvent = new ShowToastEvent({
             title: 'Success',
             message: 'Account created successfully. Record Id: '+event.detail.id,
