@@ -13,7 +13,7 @@ public with sharing class AccountTriggerHandler {
         
         for(Account acc : accounts){
             Account newAcc = new Account(Id = acc.Id);
-            newAcc.Last_After_Update_Execution_Time__c = DateTime.now();
+            //newAcc.Last_After_Update_Execution_Time__c = DateTime.now();
             accountsToUpdate.add(newAcc);
         }
         // Update all accounts at once to avoid hitting governor limits

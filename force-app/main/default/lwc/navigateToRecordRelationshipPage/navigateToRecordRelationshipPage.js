@@ -6,7 +6,7 @@ export default class NavigateToRecordRelationshipPage extends NavigationMixin(Li
         this[NavigationMixin.Navigate]({
             type: 'standard__recordRelationshipPage',
             attributes: {
-                recordId:'001gK00000D3GtaQAF',
+                recordId:'001dM00003kBGlUQAW',  //parent record id
                 objectApiName: 'Account',
                 relationshipApiName: 'Contacts',    //related record to which you want to navigate to
                 actionName: 'view'

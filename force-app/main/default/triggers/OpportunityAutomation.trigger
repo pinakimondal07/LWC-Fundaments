@@ -26,10 +26,10 @@ trigger OpportunityAutomation on Opportunity (before insert, after insert, befor
             // List<Opportunity> opps = Trigger.new;       //This will return a list of oppportunity
             // Opportunity opp = opps[0];
 
+            List<Task> tasks = new List<Task>();
             // Loop through each Opportunity in the trigger context
             for(Opportunity opp : Trigger.new){
 
-                List<Task> tasks = new List<Task>();
                 // Check if the Opportunity's StageName is 'Closed Won'
                 if(opp.StageName == 'Closed Won'){
                     // Create follow-up tasks for the sales team
